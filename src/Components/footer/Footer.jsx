@@ -36,7 +36,7 @@ const Footer = () => {
           <p>Connect with me:</p>
           <div className="footer-social-icons">
             <a
-              href="https://www.linkedin.com/in/your-profile"
+              href="www.linkedin.com/in/kishanp12"
               target="_blank"
               rel="noopener noreferrer"
               className="linkedin"
@@ -45,7 +45,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://github.com/your-profile"
+              href="https://github.com/kishanp12395"
               target="_blank"
               rel="noopener noreferrer"
               className="github"
@@ -53,7 +53,7 @@ const Footer = () => {
               <img src={github_icon} alt="GitHub" />
             </a>
 
-            <a href="mailto:your-email@example.com" className="email">
+            <a href="mailto:kishanp12395@gmail.com" className="email">
               <img src={email_icon} alt="Email" />
             </a>
           </div>
