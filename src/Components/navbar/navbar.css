@@ -124,7 +124,7 @@
 
 @media screen and (max-width: 480px) {
     .navbar .img {
-       max-width: 150px;
+       max-width: 185px;
         z-index: -2;
     }
 }
