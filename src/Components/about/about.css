@@ -9,20 +9,20 @@
 
 .about-title {
     position: relative;
+    text-align: center;
 }
 
 .about-title h1 {
-    padding: 0px 15px; /* Reduced from 30px */
-    font-size: 50px; /* Reduced from 80px */
+    padding: 0px 30px;
+    font-size: 50px;
     font-weight: 600;
 }
 
 .about-title img {
-    width: 70%; /* Slightly reduced */
     position: absolute;
-    top: 7px; /* Reduced from 5px */
+    bottom: 0;
     right: 0;
-    z-index: -1;
+    z-index: -3;
 }
 
 .about-sections {
@@ -180,7 +180,9 @@
         text-align: center;
     }
     .about-title img{
-        z-index: -1;
+        width: 50%;
+        bottom: -1px;
+        right: 20px;
     }
     
     .about-sections {
