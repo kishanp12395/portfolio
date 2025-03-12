@@ -19,8 +19,9 @@
 }
 
 .about-title img {
+    width: 70%; /* Slightly reduced */
     position: absolute;
-    bottom: 0;
+    top: 0px; /* Reduced from 5px */
     right: 0;
     z-index: -1;
 }
@@ -181,8 +182,8 @@
     }
     .about-title img{
         width: 50%;
-        bottom: -1px;
-        right: 20px;
+        top: 7px;
+        right: 10px;
     }
     
     .about-sections {
@@ -248,7 +249,7 @@
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .about-title h1 {
         font-size: 35px;
     }
@@ -256,4 +257,4 @@
     .about-left h1 {
         font-size: 32px;
     }
-}
+} */
