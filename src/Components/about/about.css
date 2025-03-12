@@ -9,21 +9,25 @@
 
 .about-title {
     position: relative;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-title h1 {
-    padding: 0px 30px;
+    padding: 0px 20px;
     font-size: 50px;
     font-weight: 600;
 }
 
 .about-title img {
-    width: 70%; /* Slightly reduced */
+    width: 60%; /* Increase visibility */
     position: absolute;
-    top: 0px; /* Reduced from 5px */
-    right: 0;
-    z-index: -1;
+    top: 14px; /* Adjusted */
+    left: 65%; /* Center it */
+    transform: translateX(-50%); /* Centering trick */
+    z-index: -1; /* Ensure it's above other elements */
 }
 
 .about-sections {
@@ -125,7 +129,7 @@
 
 
 /* Responsive adjustments */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .about {
         margin: 30px 40px;
         gap: 30px;
@@ -167,7 +171,7 @@
     .about-achievement p {
         font-size: 16px;
     }
-}
+} */
 
 /* Mobile screens */
 @media screen and (max-width: 768px) {
@@ -181,8 +185,8 @@
         text-align: center;
     }
     .about-title img{
-        width: 50%;
-        top: 7px;
+        width: 53%;
+        top: 11px;
         right: 10px;
     }
     
