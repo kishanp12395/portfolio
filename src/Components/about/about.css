@@ -22,7 +22,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: -3;
+    z-index: -1;
 }
 
 .about-sections {
@@ -245,5 +245,15 @@
     .about-achievement p {
         font-size: 14px;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title h1 {
+        font-size: 35px;
+    }
+
+    .about-left h1 {
+        font-size: 32px;
     }
 }
