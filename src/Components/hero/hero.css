@@ -1,0 +1,169 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    padding: 20px;
+    text-align: center;
+    min-height: 80vh;
+    max-width: 1200px; /* Prevent content from being too wide */
+    margin: 0 auto; /* Center content */
+    
+}
+
+.hero img {
+    margin-top: 10px;
+    width: 250px; /* Set a width instead of height for better scaling */
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    width: 80%; /* Increase width flexibility */
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: -30px;
+}
+
+.hero h1 span {
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    width: 80%;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-top: -20px;
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.hero-connect, .hero-resume {
+    border: 2px solid transparent;
+    padding: 12px 20px; /* Reduced padding for better fit */
+    border-radius: 10px; /* Adjusted border-radius for consistency */
+    font-size: 16px; /* Adjusted font size */
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    width: auto; /* Ensures it doesn’t stretch too much */
+    min-width: 160px; /* Prevents it from shrinking too much */
+    
+}
+
+.hero-connect {
+    background: linear-gradient(290deg, #DF8908 -50.09%, #B415FF 106.28%);
+}
+
+
+.hero-resume {
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-resume-download{
+   font-size: 20px;
+}
+
+.hero-connect:hover {
+    border: 2px solid #fff;
+    background: linear-gradient(264deg, #B415FF -5.09%, #DF8908 106.28%);
+}
+
+.hero-resume:hover {
+    background: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 55px;
+        width: 90%;
+    }
+
+    .hero p {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .hero img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-action {
+        font-size: 18px;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+        width: 95%;
+        margin-top: 0px;
+    }
+
+    .hero p {
+        font-size: 13px;
+        width: 95%;
+    }
+
+    .hero img {
+        width: 230px;
+        height: 230px;
+        margin-top: 115px;
+    }
+
+    .hero-action {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .hero-connect, .hero-resume {
+        width: 100%;
+        max-width: 250px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px; /* Adjust for smaller screens */
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero img {
+        width: 150px;
+        height: 150px;
+    }
+}

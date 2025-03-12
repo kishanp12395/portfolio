@@ -1,0 +1,251 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 10%;
+    background: #121212; /* Dark background */
+    color: white;
+}
+
+/* ====== Top Section ====== */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-top-left {
+    max-width: 500px;
+}
+
+.footer-top-left p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #a0a0a0;
+}
+
+.footer-top-left img {
+    width: 180px;
+}
+
+.footer-top-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ====== Email Input & Subscribe Button ====== */
+.footer-email-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border-radius: 12px;
+    background-color: #32323c;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.footer-email-input:hover {
+    border-color: white;
+}
+
+.footer-email-input input {
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+    font-family: Outfit;
+}
+
+.footer-subscribe {
+    font-size: 16px;
+    padding: 17px 31px;
+    border-radius: 12px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-subscribe:hover {
+    transform: scale(1.05);
+}
+
+/* ====== Bottom Section ====== */
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 17px;
+    color: #a0a0a0;
+}
+
+.footer-bottom-left{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Outfit;
+}
+.footer-bottom-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.footer-bottom-right p {
+    margin-left: 12px;
+    font-family: Outfit;
+}
+/* ====== Social Icons Section ====== */
+.footer-social-icons {
+    display: flex;
+    gap: 19px;
+    margin-top: 0px;
+}
+
+.footer-social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* ====== Responsive Design for Mobile ====== */
+/* @media screen and (max-width: 768px) {
+    .footer {
+        padding: 50px 5%;
+        text-align: center;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-top-left img {
+        width: 150px; 
+    }
+
+    .footer-top-left p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .footer-top-right {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .footer-email-input {
+        width: 80%;
+        padding: 10px 15px;
+    }
+
+    .footer-subscribe {
+        width: 80%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+    }
+
+    .footer-bottom-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+} */
+
+
+/* ====== Responsive Design for Mobile ====== */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 50px 5%;
+        text-align: center;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-top-left img {
+        width: 180px; /* Adjust image size */
+    }
+
+    .footer-top-left p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .footer-top-right {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .footer-email-input {
+        width: 80%;
+        padding: 7px 15px;
+        border-radius: 12px;
+        background-color: #32323c;
+    }
+    .footer-email-input input{
+        font-size: 13px;
+        font-family: Outfit;
+    }
+    .footer-email-input img{
+        width: 17px;
+    }
+
+    .footer-subscribe {
+        width: 80%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+    }
+
+    .footer-bottom-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-bottom-left{
+        font-size: 16px;
+    }
+}
