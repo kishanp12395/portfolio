@@ -36,7 +36,7 @@ const Footer = () => {
           <p>Connect with me:</p>
           <div className="footer-social-icons">
             <a
-              href="https://www.linkedin.com/in/kishanp12"
+              href="https://linkedin.com/in/kishanp12"
               target="_blank"
               rel="noopener noreferrer"
               className="linkedin"
