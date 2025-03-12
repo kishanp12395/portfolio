@@ -179,6 +179,9 @@
         font-size: 35px;
         text-align: center;
     }
+    .about-title img{
+        z-index: -1;
+    }
     
     .about-sections {
         flex-direction: column;
